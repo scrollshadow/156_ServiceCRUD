@@ -69,7 +69,7 @@ app.put('/biodata/:id', (req, res)=>{
         console.error(err);
         res.status(500).send('Internal Server Error')
     });
-})
+});
 
 app.delete('/biodata/:id', (req, res)=>{
     const { id } = req.params;
@@ -96,7 +96,6 @@ app.delete('/biodata/:id', (req, res)=>{
     });
 });
 
-app.put('/biodata/:id', (req, res)=>{
 
 app.listen(port, () => {
     console.log(`app running on port ${port}.`)
